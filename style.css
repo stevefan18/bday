@@ -164,7 +164,6 @@ header { min-height: 100svh; padding: 90px 0 60px; text-align: center; display: 
 
 footer { padding: 90px 0 120px; text-align: center; font-size: .82rem; color: var(--muted); }
 
-/* ---------- Animasi muncul saat scroll ---------- */
 .rv { opacity: 0; transform: translateY(26px); filter: blur(8px); transition: opacity 1.1s ease, transform 1.1s cubic-bezier(.2,.8,.2,1), filter 1.1s ease; transition-delay: var(--d, 0s); }
 .rv.in { opacity: 1; transform: none; filter: none; }
 
@@ -176,4 +175,15 @@ footer { padding: 90px 0 120px; text-align: center; font-size: .82rem; color: va
   *, *::before, *::after { animation-duration: .01ms !important; animation-delay: 0s !important; transition-duration: .01ms !important; }
   .rv { opacity: 1; transform: none; filter: none; }
   .date-tag, .hero-title, .hero-name, .hero-subtitle, .hero-polaroid-wrap, .scroll-cue { opacity: 1; }
+}
+.timeline-card { display: grid; grid-template-columns: 1fr 200px; gap: 32px; align-items: center; }
+.tl-photo { position: relative; background: var(--paper); color: var(--paper-ink); padding: 8px 8px 12px; box-shadow: 0 20px 45px rgba(0,0,0,.45); transform: rotate(3deg); transition: transform .5s cubic-bezier(.2,.8,.2,1); }
+.timeline-item:nth-child(odd) .tl-photo { transform: rotate(-3deg); }
+.tl-photo:hover { transform: rotate(0) scale(1.04); }
+.tl-photo img { display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; filter: blur(12px) grayscale(1) brightness(1.5); transition: filter 2s ease .35s; }
+.timeline-item.in .tl-photo img { filter: none; }
+.tl-photo figcaption { margin-top: 6px; text-align: center; font-family: var(--hand); font-size: 1.15rem; line-height: 1.2; }
+@media (max-width: 620px) {
+  .timeline-card { grid-template-columns: 1fr; gap: 22px; }
+  .tl-photo { width: 200px; }
 }
