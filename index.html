@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selamat Ulang Tahun! ✨</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,300;1,400;1,500&family=Plus+Jakarta+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <canvas id="sky"></canvas>
+  <canvas id="confettiCanvas"></canvas>
+
+  <div class="audio-pill" id="audioBtn" title="Putar Musik Santai" role="button" tabindex="0">
+    <div class="icon-bars"><div class="bar"></div><div class="bar"></div><div class="bar"></div></div>
+    <span id="audioText">Putar Musik Suasana</span>
+  </div>
+
+  <div class="container">
+
+    <header>
+      <div class="date-tag">29 Oktober, it's your birthday!</div>
+      <div class="big-age" id="bigAge" aria-label="20th"><span id="ageNum">0</span></div>
+      <p class="hero-title">HAPPY BIRTHDAY</p>
+      <h1 class="hero-name">Gracelyn Iyana Anderson </h1>
+      <p class="hero-subtitle">
+        Aloooooo ENEN....! Happy Birthday yaaaaaa, cieeee dah 20 tahun aja nihhhh, welcome to 20s club!. Thank you for making every day feel like magic. I hope your day is as wonderful and special as you are to me. <b>I LOVE YOU EN...! 🫶🏻</b>
+      </p>
+
+      <div class="hero-polaroid-wrap">
+        <div class="washi-tape tape-top"></div>
+        <img src="./IMG/WhatsApp%20Image%202026-10-23%20at%2016.05.23%20(1).jpeg" alt="Foto Utama">
+        <span class="hero-caption">My Favorite Person ✨</span>
+      </div>
+      <div class="scroll-cue"></div>
+    </header>
+<div class="section-title-wrap rv">
+  <span class="section-sub">A brief look back</span>
+  <h2 class="section-title">Our Story So Far</h2>
+</div>
+
+<div class="timeline" id="timeline">
+  <div class="tl-fill"></div>
+
+  <div class="timeline-item rv">
+    <div class="timeline-dot"></div>
+    <div class="timeline-card">
+      <div class="tl-text">
+        <span class="timeline-time">The First Day We Met</span>
+        <h3>Awal Cerita yang Canggung</h3>
+        <p></p>
+      </div>
+      <figure class="tl-photo">
+        <img src="./IMG/foto10.jpeg" alt="Awal cerita kita">
+        <figcaption></figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="timeline-item rv">
+    <div class="timeline-dot"></div>
+    <div class="timeline-card">
+      <div class="tl-text">
+        <span class="timeline-time">I took a picture of you without you knowing</span>
+        <h3>foto kita blurrr eakkk</h3>
+        <p></p>
+      </div>
+      <figure class="tl-photo">
+        <img src="./IMG/foto11.jpeg" alt="Ngobrol tanpa lihat jam">
+        <figcaption></figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="timeline-item rv">
+    <div class="timeline-dot"></div>
+    <div class="timeline-card">
+      <div class="tl-text">
+        <span class="timeline-time">She is very beautiful</span>
+        <h3></h3></p>
+      </div>
+      <figure class="tl-photo">
+        <img src="./IMG/foto8.jpeg" alt="Selamat 20 tahun!">
+        <figcaption></figcaption>
+      </figure>
+    </div>
+  </div>
+</div>
+  
+    <!-- <div class="section-title-wrap rv">
+      <span class="section-sub">A brief look back</span>
+      <h2 class="section-title">Our Story So Far  </h2>
+    </div>
+
+    <div class="timeline" id="timeline">
+      <div class="tl-fill"></div>
+
+      <div class="timeline-item rv">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <span class="timeline-time">The First Day We Met</span>
+          <h3>Awal Cerita yang Canggung</h3>
+          <p>Masih ingat waktu pertama kali kita ngobrol lama? Lucu rasanya kalau diingat lagi betapa canggungnya kita saat itu, padahal sekarang kita bisa menertawakan hal konyol apa saja.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item rv">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <span class="timeline-time">Momen Random Terfavorit</span>
+          <h3>Kopi Sore & Obrolan Panjang</h3>
+          <p>Waktu kita duduk santai berjam-jam tanpa memikirkan waktu, ditemani kopi dingin dan cerita ngalor-ngidul. Di momen sesederhana itu, aku sadar betapa nyamannya ada di dekatmu.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item rv">
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <span class="timeline-time">Hari Ini</span>
+          <h3>Satu Lembar Baru yang Dimulai</h3>
+          <p>Dan hari ini, kamu bertambah usia. Menjadi pribadi yang semakin dewasa, kuat, dan tetap menjadi orang berhati hangat yang selalu kukagumi.</p>
+        </div>
+      </div>
+    </div> -->
+
+ 
+    <div class="section-title-wrap rv">
+      <span class="section-sub">With Enen</span>
+      <h2 class="section-title">Little Moments</h2>
+    </div>
+
+    <div class="scrapbook-grid">
+      <div class="scrapbook-item rv">
+        <div class="washi-tape tape-corner-left"></div>
+        <img src="./IMG/foto3.jpeg" alt="Momen 1">
+        <span class="scrapbook-note">Trial Pacaran 1 Hari</span>
+      </div>
+      <div class="scrapbook-item rv">
+        <div class="washi-tape tape-corner-right"></div>
+        <img src="./IMG/foto2.jpeg" alt="Momen 2">
+        <span class="scrapbook-note">Gak bisa pulang karna hujan deres</span>
+      </div>
+      <div class="scrapbook-item rv">
+        <div class="washi-tape tape-corner-left"></div>
+        <img src="./IMG/foto7.jpeg" alt="Momen 3">
+        <span class="scrapbook-note">Cieeee dia pertama kali nyandar</span>
+      </div>
+      <div class="scrapbook-item rv">
+        <div class="washi-tape tape-corner-right"></div>
+        <img src="./IMG/foto4.jpeg" alt="Momen 4">
+        <span class="scrapbook-note">Sec date di SengHap Kesawan</span>
+      </div>
+    </div>
+
+    <!-- MAKE A WISH -->
+    <div class="wish-box rv">
+      <span class="section-sub">Before reading the letter...</span>
+      <h3>Close Your Eyes & Make a Wish</h3>
+
+      <div class="cake-container" id="cakeBtn" title="Klik untuk tiup lilin" role="button" tabindex="0">
+        <div class="candle"><div class="flame" id="flame"></div></div>
+        <div class="cake-base"></div>
+      </div>
+
+      <p class="wish-hint" id="wishHint">✨ Tap the candle flame to blow it out ✨</p>
+    </div>
+
+    <!-- SURAT -->
+    <div class="letter-section">
+      <div class="envelope-box rv">
+        <div class="washi-tape tape-top"></div>
+
+        <h3 class="letter-greeting">Hai Enen,</h3>
+
+        <div class="letter-body">
+          <p class="rv">Hai ennn senang bisa mengenal orang seperti mu, yang lucu, imut dan baik. Gak tau kenapa kita bisa bertemu, ntah sebuah kebetulan yang di sengaja atau sebuah takdir yang telah didatangkan.</p>
+          <p class="rv">Di umur yang baru ini, I hope you are blessed with good health and a long life.Don’t forget to give thanks to God, because God is still good to us.May all your dreams come true. SADHU.</p>
+          <p class="rv">Thank you juga enn udah hadir di kehidupan ku, udah mau menerima w apanya, w sadar diluar sana masih banyak orang yang lebih baik dari aku dan lebih tulus dari aku dalam mencintai mu, But believe me, I’ve always loved you</p>
+          <p class="rv">Semua hal baik yang sedang kamu perjuangkan, pelan-pelan semoga segera menemukan jalannya. Don’t forget to be proud of yourself for everything you’ve managed to get through so far.</p>
+        </div>
+
+        <div class="letter-sign rv">
+          <span style="font-size: .9rem;">From me</span>
+          <span class="letter-sign-name">shen</span>
+        </div>
+      </div>
+    </div>
+
+    <footer>Dibuat khusus untuk hari bahagiamu • Selalu ada hal baik di depan sana.</footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
